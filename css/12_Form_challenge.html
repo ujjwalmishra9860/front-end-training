@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Form_Challenge</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background:#344a72;
+            font-family: 'Raleway', sans-serif;
+            list-style: 1.8;
+        }
+        #container
+        {   
+            margin: 30px auto;
+            position: relative;
+            top:50px;
+            background:whitesmoke;
+            max-width: 20%;
+            padding: 20px;
+        }
+        #main-head
+        {
+            text-align: center;
+            font-family: 'Anek Devanagari', sans-serif;
+        }
+    
+        #form .form-label
+        {
+            color: #666;
+        }
+        .form-input
+        {
+            width: 100%;
+            border: 1px #ddd solid;
+            border-radius: 5px;
+        }
+        #btn
+        {
+            display: block;
+            color: white;
+            background-color:#49c1a2 ;
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        #btn:hover
+        {
+            background: #37a08e;
+        }
+        #pre-footer p
+        {
+            font-size: 13px;
+            position: relative;
+            left:25%;
+        
+        }
+        #post-footer
+        {
+            font-size: 13px;
+            position: relative;
+            left: 35%;
+            
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 70px;
+        
+        }
+        footer a
+        {
+            color: #49c1a2;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main-head">
+            <h2>Sign Up</h2>
+            <p>It's Free and only takes a minutes</p>
+        </div>
+        <div id="form">
+            <form action="Process.php">
+                <label for="fname" class="form-label">First Name</label><br />
+                <input type="text" id="fname" class="form-input"/>
+                <br />
+                <label for="lname" class="form-label" >Last Name</label><br />
+                <input type="text" id="lname" class="form-input">
+                <br />
+                <label for="email"class="form-label">Email</label><br />
+                <input type="email" name="email" id="email" class="form-input">
+                <br />
+                <label for="password" class="form-label">Password</label><br />
+                <input type="text" id="password" class="form-input">
+                <br />
+                <label for="cpassword" class="form-label">Confirm Password</label><br />
+                <input type="text" id="cpassword" class="form-input">
+
+            </form>
+            <br />
+        </div>
+        <button id="btn">Sign Up</button>
+        <div id="pre-footer">
+            <p>By clicking sign up you agree our</p>
+            <a id="post-footer"href="#">Terms and condtion</a>
+        </div>
+    </div>
+       
+        <footer>
+            <p>Already have an account?<a href="#">login here</a></p>
+        </footer>
+    
+</body>
+</html>

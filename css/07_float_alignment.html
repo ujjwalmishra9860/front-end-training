@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #clear
+        {
+            clear: both;
+        }
+        .container
+        {
+            width: 960px;
+            margin:30px auto;
+        }
+        body
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .box
+        {
+            border: 3px solid black;
+            background-color: rgb(100, 62, 62);
+            margin-bottom: 20px;
+        }
+
+        /* Text Alignment */
+        .box p
+        {
+            text-align: left;
+        }
+        /* Using Float */
+        #box2
+        {
+            float: left;
+            width: 68%;
+        }
+        #box3
+        {
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nemo quidem expedita inventore. Error porro modi similique facilis ab!</p>
+        </div>
+        <div id="box2" class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nemo quidem expedita inventore. Error porro modi similique facilis ab!</p>
+        </div>
+        <div id="box3" class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nemo quidem expedita inventore. Error porro modi similique facilis ab!</p>
+        </div>
+        <!-- for clearing right and left float -->
+        <div id="clear"></div>
+
+        <div id="box4" class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nemo quidem expedita inventore. Error porro modi similique facilis ab!</p>
+        </div>
+    </div>    
+</body>
+</html>

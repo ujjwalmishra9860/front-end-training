@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+    <style>
+        body
+        {
+            background: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 100px;
+        }
+        /* displaying none h1 */
+        h1
+        {
+            display: none;
+        }
+
+        /* Smartphones */
+        @media(max-width:500px)
+        {
+            body
+            {
+                background: red;
+
+            }
+
+            #smartphone h1
+            {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width:501px) and (max-width:768px)
+        {
+            body
+            {
+                background: rgb(0, 255, 242);
+
+            }
+
+            #tablet h1
+            {
+                display: block;
+            }
+        }
+
+        /* Normal */
+        @media(min-width:769px) and (max-width:1200px)
+        {
+            body
+            {
+                background: rgb(60, 255, 0);
+
+            }
+
+            #normal h1
+            {
+                display: block;
+            }
+        }
+        
+        /* widescreen */
+        @media(min-width:1201px)
+        {
+            body
+            {
+                background: rgb(0, 0, 0);
+
+            }
+
+            #widescreen h1
+            {
+                display: block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="widescreen"><h1>Widescreen</h1></div>
+        <div id="normal"><h1>Normal</h1></div>
+        <div id="tablet"><h1>Tablet</h1></div>
+        <div id="smartphone"><h1>Smartphone</h1></div>
+        <div id="lanscape"><h1>Landscape</h1></div>
+    </main>
+</body>
+</html>

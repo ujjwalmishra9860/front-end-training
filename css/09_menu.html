@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Styling</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Nav bar */
+        .nav-bar
+        {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            background: rgb(67, 146, 250);
+            border-radius: 5px;
+            overflow: auto;    /*for background after applying float */
+        }
+        .nav-bar li
+        {
+            float: left;
+            
+        }
+        .nav-bar li a
+        {
+            display: block;
+            padding: 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-bar li a:hover
+        {
+            color: rgb(105, 105, 105);
+        }
+        .nav-bar li a:active
+        {
+            color: black;
+        }
+
+        /* Side Menu */
+        .main-menu
+        {
+            list-style: none;
+            border: 1px solid #ddd ; 
+            border-radius: 10px;
+            padding: 15px; 
+            width: 300px;
+        }
+        .main-menu li
+        {
+            font-size: 18px;
+            line-height: 2.5em;
+            border-bottom: 1px dotted #ddd;
+        }
+        .main-menu li:last-child
+        {
+            border: none;
+        }
+        .main-menu li a
+        {
+            text-decoration: none;
+            color: rgb(43, 161, 161);
+            background:rgb(193, 216, 216);
+        }
+        .main-menu li a:hover
+        {
+            color:rgb(0, 58, 58);
+            background:rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+    <br />
+    <br />
+    <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+   
+</body>
+</html>

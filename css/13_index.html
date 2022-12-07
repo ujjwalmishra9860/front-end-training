@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and display none</title>
+    <style>
+        /* Display none renoves the content from browser */
+        h1
+        {
+            /* display: none; */
+
+            /* Visibility hidden hide the content with empty space */
+            /* visibility: hidden; */
+
+            /* important flag priortise the properties */
+            color: blue !important; /* by the rule red color dhould be executed but here blue willget exexcuted as !important is being used */
+        }
+        .hello
+        {
+            color: red;
+        }
+
+        /* Negative margin*/
+
+        h2
+        {
+            margin-top: -123px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quod ipsa repudiandae veritatis optio reprehenderit.</p>
+    <h2>Helloo </h2>
+</body>
+</html>

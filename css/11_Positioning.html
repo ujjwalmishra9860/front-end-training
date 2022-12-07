@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+
+        /* Type Of Positions
+        1)Static (default).
+        2)Relative - include top bottom left right.
+        3)Absolute - need parent to be relative and can be (TBLR).
+        4)Fixed - Get fixed to the position.
+        5)Sticky - Stick to a particular Pixels provided.
+        */
+        body
+        {
+            height: 4000px;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+        }
+
+        /* Relative  z-index */
+        #box1
+        {
+            background:red;
+            position: relative;
+            top: 100px;
+            left: 50px;
+            z-index: 1;
+            
+        }
+        /* Absolute Parent div */
+        .container
+        {
+            height: 500px;
+            width:500px;
+            background: grey;
+            position: absolute;
+        }
+        #box2
+        {
+            position: relative;
+            background:green;
+            top: 500px;
+            left:50%;
+            
+        }
+        #box3
+        {
+            position: relative;
+            background:rgb(255, 0, 179);
+            top: 200px;
+            left:50%;
+        }
+
+        /* Fixed */
+        #box4
+        {
+            background:yellow;
+            position: fixed;
+        }
+
+        /* Stickey */
+        #box5
+        {
+            background: firebrick;
+            position: sticky;
+            top: 0px;
+            left:50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div class="container">
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+    </div>
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+    
+</body>
+</html>

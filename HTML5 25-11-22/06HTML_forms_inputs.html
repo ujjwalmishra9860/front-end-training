@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and i/p</title>
+</head>
+<body>
+    <form action="process.php">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="message">Messsage</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="sex">Sex</label><br>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="bday">DOB</label><br>
+            <input type="date" name="bday" id="bday">
+        </div><br>
+        <div>
+            <label for="Membership">Membership</label>
+            <input type="radio" name="Membership" id="Membership"><br>
+            <label for="Membership1">Membership1</label>
+            <input type="radio" name="Membership1" id="Membership1">
+        </div>
+        <div>
+            <label for="Membershipp">Membership</label>
+            <input type="checkbox" name="Membershipp" id="Membershipp"><br>
+            <label for="Membership2">Membership2</label>
+            <input type="checkbox" name="Membership2" id="Membership2">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <div>
+            <button type="reset"> Reset</button>
+        </div>
+
+
+    </form>
+    
+</body>
+</html>

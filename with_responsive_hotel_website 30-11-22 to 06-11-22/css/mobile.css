@@ -1,0 +1,92 @@
+/* Nav-bar Aligns */
+
+#nav-bar .logo
+{
+    float: none;
+    text-align: center;
+}
+
+#nav-bar ul, #nav-bar ul li
+{
+    float: none;
+}
+#nav-bar ul li a
+{
+    padding: 5px;
+    border-bottom: 1px dotted #444;
+}
+
+/* Showcase */
+
+#showcase .showcase-content
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+
+/* Home description */
+
+#home-desc .history-img
+{
+    display: none;
+}
+#home-desc .history-content
+{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-top:15px ;
+    font-size: 15px;
+}
+
+
+/* Features */
+
+.box
+{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+/* About section */
+
+#testimonials
+{
+    padding-top: 50px;
+}
+
+#about-info .info-right
+{
+    float: none;
+    width: 100%;
+    margin-top:30px;
+}
+
+#about-info .info-left
+{
+    float:none;
+    width: 100%;
+}
+.l-head
+{
+    text-align: center;
+}
+
+/* Testimonial */
+
+#testimonials
+{
+    height: 100%;
+}
+
+/* Contact form box */
+
+#contact-info .box
+{
+    border-bottom: 1px rgb(128, 127, 127) dotted;
+}

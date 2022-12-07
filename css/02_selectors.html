@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* id selectors */
+        #home, #about
+        {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #home
+        {
+            background-color: rgb(153, 152, 152);
+        }
+        #about
+        {
+            background-color: rgb(165, 83, 83);
+        }
+
+        /* class selectors */
+        .home-description
+        {
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* By Element */
+        body
+        {
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="home">
+        <h1>Home</h1>
+        <p class="home-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe vel asperiores debitis. Odit beatae quaerat sint enim sed dolorum repellendus iure laborum tempora quibusdam deserunt, ducimus porro officiis fugiat.</p>
+    </div>
+    <div id="about">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur <br /> elit. Fugiat, maiores qui omnis nisi eligendi id porro consequatur animi modi quod laborum pariatur architecto labore nesciunt laudantium, aperiam, quia cum commodi?</p>
+    </div>
+    
+</body>
+</html>
