@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/utilities.css">
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-1.ico">
     <title>Welcome to EdgeLedger</title>
 </head>
 <body id="home">
         <header class="hero">
-             <div id="navbar" class="navbar">
+             <div id="navbar" class="navbar top">
                 <h1 class="logo">
                     <span class="text-primary"><i class="fas fa-book-open"></i>
                     Edge</span> Ledger
@@ -21,7 +23,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#cases">Cases</a></li>
-                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -94,21 +96,37 @@
                 </header>
                 <div class="row">
                     <div class="column">
-                        <img src="/img/cases/cases1.jpg" alt="case_1">
+                        <a href="/img/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad.">
+                            <img src="/img/cases/cases1.jpg" alt="case_1">
+                        </a>
+                            <a href="/img/cases/cases2.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad.">
                         <img src="/img/cases/cases2.jpg" alt="case_2">
+                        </a>
                     </div>
                 
                     <div class="column">
-                        <img src="/img/cases/cases3.jpg" alt="case_3">
-                        <img src="/img/cases/cases4.jpg" alt="case_4">
+                            <a href="/img/cases/cases3.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad.">
+                                <img src="/img/cases/cases3.jpg" alt="case_3">
+                            </a>
+                            <a href="/img/cases/cases4.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad."></a>
+                                <img src="/img/cases/cases4.jpg" alt="case_4">
+                            </a>
                     </div>
                     <div class="column">
-                        <img src="/img/cases/cases5.jpg" alt="case_5">
-                        <img src="/img/cases/cases6.jpg" alt="case_6">
+                        <a href="/img/cases/cases5.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad."></a>
+                            <img src="/img/cases/cases5.jpg" alt="case_5">
+                        </a>
+                        <a href="/img/cases/cases6.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad."></a>
+                            <img src="/img/cases/cases6.jpg" alt="case_6">
+                        </a>
                     </div>
                     <div class="column">
-                        <img src="/img/cases/cases7.jpg" alt="case_7">
-                        <img src="/img/cases/cases8.jpg" alt="case_8">
+                        <a href="/img/cases/cases7.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad."></a>
+                            <img src="/img/cases/cases7.jpg" alt="case_7">
+                        </a>
+                        <a href="/img/cases/cases8.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ad."></a>
+                            <img src="/img/cases/cases8.jpg" alt="case_8">
+                        </a>
                     </div>
                 </div>
             </section>
@@ -124,9 +142,9 @@
                     <div class="column">
                         <div class="column-2 bg-secondary">
                             <h4>December 10 2022</h4>
-                            <h2>Bolg Post One</h2>
+                            <h2>Blog Post One</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum corporis eos accusantium, iste eligendi nam, cum nihil iure hic ad eveniet? Sit quam quibusdam architecto ab tenetur laborum nisi velit?</p>
-                            <a href="#" class="btn btn-outline">
+                            <a href="blog.html" class="btn btn-outline">
                                 <i class="fas fachevrom"></i>
                                 Read Our Blog
                             </a>
@@ -203,5 +221,37 @@
             </div>
             <p>Copyright &copy; 2022 - EdgeLedger</p>
         </footer> 
+
+
+        <!-- Scripting -->
+
+        <script src="/js/lightbox-plus-jquery.min.js"></script>
+
+        <script>
+            const navbar = document.getElementById('navbar');
+            let scrolled = false;
+            window.onscroll = function()
+            {
+                if(window.pageYOffset > 100)
+                {
+                    navbar.classList.remove('top');
+                    if(!srolled)
+                    {
+                        navbar.style.transform = 'translateY(-70px)';
+                    }
+                    setTimeout(function()
+                    {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    },200);
+                }
+                else
+                {
+                    navbar.classList.add('top');
+                    scrolled = false;
+                }
+            }
+
+        </script>
 </body>
 </html>
