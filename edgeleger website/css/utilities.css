@@ -72,7 +72,7 @@
 
 /* Flex Columns */
 
-.flex-columns .flex-reverse .row
+#blog .row
 {
     flex-direction: row-reverse;
 }
