@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <!-- Style -->
+
+    <style>
+
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #555;
+            color: #fff;
+
+        }
+
+        header
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            
+        }
+
+        header:before
+        {
+            content: '';
+            background: url('/water.jpg')no-repeat center center/cover;
+            opacity: 0.4;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header > h1
+        {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        .is-required::after
+        {
+            content:'*';
+            color: red;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <label class="is-required" for="name">Name</label>
+    <input type="text"/> -->
+
+
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, error ab voluptates vel impedit quas!</p>
+    </header>
+    <main>
+        <section>
+            <h3>Hello World!!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, dolorum est quam dolorem reprehenderit illum, libero, iusto delectus maiores voluptas blanditiis unde repellendus mollitia. Vitae animi perferendis impedit expedita molestias laboriosam odit debitis quibusdam quisquam!</p>
+
+        </section>
+    </main>
+</body>
+</html>

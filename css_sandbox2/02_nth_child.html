@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth Child Selector</title>
+
+    <!-- Styling -->
+
+    <style>
+        li{
+            padding: 0.2rem;
+            margin: 20px;
+            list-style: none;
+        }
+
+        /* First child */
+
+        li:first-child
+        {
+            background: #333;
+            color: #ccc;
+        }
+
+        /* Last Child */
+
+        li:last-child
+        {
+            background: #333;
+            color: #ccc;
+        }
+
+        /* Third One */
+
+        li:nth-child(3)
+        {
+            background: #128;
+        }
+
+        /* Every third one */
+
+        li:nth-child(3n+0)
+        {
+            background: #961;
+        }
+
+        /* Every 3 after 7 */
+        li:nth-child(3n+7)
+        {
+            background: #765;
+        }
+
+        /* Every Odd */
+        li:nth-child(odd)
+        {
+            background: #333;
+        }
+
+        /* For Even */
+
+        li:nth-child(odd)
+        {
+            background: #777;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Items 1</li>
+        <li>Items 2</li>
+        <li>Items 3</li>
+        <li>Items 4</li>
+        <li>Items 5</li>
+        <li>Items 6</li>
+        <li>Items 7</li>
+        <li>Items 8</li>
+        <li>Items 9</li>
+        <li>Items 10</li>
+        <li>Items 11</li>
+        <li>Items 12</li>
+        <li>Items 13</li>
+        <li>Items 14</li>
+        <li>Items 15</li>
+        <li>Items 16</li>
+        <li>Items 17</li>
+        <li>Items 18</li>
+        <li>Items 19</li>
+        <li>Items 20</li>
+    </ul>
+    
+</body>
+</html>

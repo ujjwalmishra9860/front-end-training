@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+    <!-- styling -->
+    <style>
+        /* scope of variable */
+        :root
+        {
+            --primary-color: steelblue ;
+            --secondary-color: skyblue;
+            --light-color:#f4f4f4;
+           
+        }
+
+        /* Applicable for Box Content */
+
+        .box
+        {
+            --max-width: 1100px;
+            --box_1-width:1;
+            --box_2-width:3;
+
+        }
+
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Creating variables */
+
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background: var(--light-color);
+        }
+
+        header{
+            background: var(--primary-color);
+            border-bottom: var(--secondary-color)solid;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container
+        {
+            display: flex;
+            margin: auto;
+            max-width:var(--max-width) ;
+
+        }
+        .box
+        {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .box-1
+        {
+            flex: var(--box_1-width);
+
+        }
+
+        .box-2
+        {
+            flex: var(--box_2-width);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variable</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box box-1">
+                <h3>Heading1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, asperiores quas. Molestias praesentium veritatis autem.</p>
+            </div>
+            <div class="box box-2">
+                <h3>Heading2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolores ex consequatur cupiditate omnis eius.</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
