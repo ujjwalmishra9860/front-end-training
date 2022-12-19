@@ -1,6 +1,8 @@
 :root
 {
     --page-1-color: steelblue;
+    --page-2-color: coral;
+    --page-3-color: pink;
 }
 /* Reset CSS */
 *
@@ -53,19 +55,27 @@ body
     transition: all 1s ease-in-out;
 }
 
-.btn:hover
+.btn:hover,
+.dark
 {
   background: #333;
   color: #fff;
 }
 
-#page-1 h1
+.dark
+{
+  background: #fff;
+  color: #333;
+
+}
+
+#page-1 #page-2 h1
 {
     transform: translateY(-1200px);
     animation: heading 3s forwards ease-in;
 }
 
-#page-1 p {
+#page-1 #page-2 p {
     transform: translateX(-1800px);
     animation: text 3s forwards ease-in 1s;
   }
