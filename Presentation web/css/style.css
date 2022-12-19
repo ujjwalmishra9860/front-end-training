@@ -1,0 +1,137 @@
+:root
+{
+    --page-1-color: steelblue;
+}
+/* Reset CSS */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #fff;
+    overflow: hidden;
+}
+
+.page
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    background: var(--page-1-color);
+}
+.page h1
+{
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page p
+{
+    font-size: 1.3rem;
+}
+
+.btn
+{
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover
+{
+  background: #333;
+  color: #fff;
+}
+
+#page-1 h1
+{
+    transform: translateY(-1200px);
+    animation: heading 3s forwards ease-in;
+}
+
+#page-1 p {
+    transform: translateX(-1800px);
+    animation: text 3s forwards ease-in 1s;
+  }
+  
+/* Animation */
+
+/* Keyframes */
+@keyframes heading {
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes text {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /* Responsive */
+
+  @media screen and (max-width: 700px)
+
+  {
+    .page h1
+    {
+        font-size: 3rem;
+        line-height: 3rem;
+
+    }
+    
+    .page p
+    {
+        font-size: 1.34rem;
+        margin: 1rem;
+        line-height: 1.4;
+    }
+
+    .btn
+    {
+        padding: 0.8rem 1.4rem;
+    }
+
+  }
+
+
+  @media screen and (max-width: 500px)
+
+  {
+    .page h1
+    {
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+    
+    .page p
+    {
+        font-size: 1.3rem;
+        margin: 1rem;
+        line-height: 1.2;
+    }
+
+    .btn
+    {
+        padding: 0.5rem 1.5rem;
+    }
+
+  }
