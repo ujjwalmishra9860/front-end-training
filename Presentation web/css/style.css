@@ -69,13 +69,13 @@ body
 
 }
 
-#page-1 #page-2 h1
+#page-1 h1
 {
     transform: translateY(-1200px);
     animation: heading 3s forwards ease-in;
 }
 
-#page-1 #page-2 p {
+#page-1 p {
     transform: translateX(-1800px);
     animation: text 3s forwards ease-in 1s;
   }
