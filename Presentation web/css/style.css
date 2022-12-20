@@ -151,7 +151,11 @@ body
     {
         padding: 0.8rem 1.4rem;
     }
-
+    .btn-2
+    {
+      position: relative;
+      bottom: 54px;
+    }
   }
 
 
