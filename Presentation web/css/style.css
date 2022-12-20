@@ -69,6 +69,16 @@ body
 
 }
 
+#page-2
+{
+  background: var(--page-2-color);
+}
+
+#page-3
+{
+  background: var(--page-3-color);
+}
+
 #page-1 h1
 {
     transform: translateY(-1200px);
