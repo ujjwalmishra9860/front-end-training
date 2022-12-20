@@ -55,14 +55,37 @@ body
     transition: all 1s ease-in-out;
 }
 
+.btn-1
+{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+    right: 6rem;
+}
+.btn-2
+{
+  position: relative;
+  right:3rem;
+  display: inline-block;
+  bottom: 4.3rem;
+  left: 7rem;
+
+}
+
 .btn:hover,
-.dark
+.btn-1
 {
   background: #333;
   color: #fff;
 }
 
-.dark
+.btn-1
 {
   background: #fff;
   color: #333;
