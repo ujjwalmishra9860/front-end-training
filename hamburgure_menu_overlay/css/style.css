@@ -83,5 +83,97 @@ body
 
 .btn:hover
 {
-    opacity: 0.9;
+    opacity: 0.7;
+}
+
+/* Menu Section */
+
+.menu-wrap
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* So that menu will always in top  */
+}
+
+.menu-wrap .toggler
+{
+    position: absolute; /* as it will overlay using absolute*/
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0; /*with this check box will be invisible */
+}
+
+.menu-wrap .hamburgur  /* responsible for box*/
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/* Hamburgur lines */
+
+.menu-wrap .hamburgur > div /* here ">" indicate immidiate div present*/ 
+{
+    position: relative;
+    flex: none; /* It sizes the item according to its width / height properties.  */
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburgur line top-bottom */
+
+.menu-wrap .hamburgur>div::before,  /* 1st and 2nd line */
+.menu-wrap .hamburgur>div::after
+{
+    content:'';
+    position: absolute;
+    z-index: 1;
+    top:-10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+.menu-wrap .hamburgur>div::after /* third line */
+{
+    top: 10px;
+}
+
+/* Changing togglers into cross */
+
+.menu-wrap .toggler:checked + .hamburgur > div  /* "checked" is targeted one */ 
+{
+    transform: rotate(125deg);
+}
+
+.menu-wrap .toggler:checked + .hamburgur > div::after,
+.menu-wrap .toggler:checked + .hamburgur > div::before
+{
+    transform: rotate(90deg);
+}
+
+/* After checked hover styling */
+
+.menu-wrap .toggler:checked:hover + .hamburgur > div
+{
+    transform: rotate(229deg);
 }
