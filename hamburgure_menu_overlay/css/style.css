@@ -162,7 +162,7 @@ body
 
 .menu-wrap .toggler:checked + .hamburgur > div  /* "checked" is targeted one */ 
 {
-    transform: rotate(125deg);
+    transform: rotate(135deg);
 }
 
 .menu-wrap .toggler:checked + .hamburgur > div::after,
@@ -210,7 +210,6 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 /* for overlay menu */
@@ -218,16 +217,15 @@ body
 .menu-wrap .menu > div
 {
     background: var(--overlay-color);
+    border-radius: 50%;
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
-    text-align: center;
     transform: scale(0);
-    transition: all 0.7s ease;
-    border-radius: 50%;
+    transition: all 0.4s ease;
 }
 
 .menu-wrap .menu > div > div
@@ -235,9 +233,11 @@ body
     text-align: center;
     width: 90vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    transition: opacity 0.4s ease;
-    margin-top: 28%;
+    transition: opacity 0.4s ease 0s;
 }
 
 /* Styling of list */
@@ -264,5 +264,6 @@ body
 {
     color: var(--secondary-color);
 }
+
 
 
