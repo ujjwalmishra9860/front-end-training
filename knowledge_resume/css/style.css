@@ -41,3 +41,18 @@ h1
 {
     font-size: 2.3rem;
 }
+
+#timeline ul
+{
+    background: var(--primary-color);
+    padding: 50px;
+}
+
+#timeline ul li
+{
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+}
+
