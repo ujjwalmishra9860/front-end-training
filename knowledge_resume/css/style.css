@@ -34,7 +34,7 @@ body
 {
     max-width: var(--max-width);
     margin: 0 auto;
-    text-align: center;
+    text-align:center;
 }
 
 h1
