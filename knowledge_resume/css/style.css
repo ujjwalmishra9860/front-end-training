@@ -99,7 +99,7 @@ h1
 
 /* Dots */
 
-#timeline ul li::after
+#timeline ul li:after
 {
     content: '';
     position: absolute;
