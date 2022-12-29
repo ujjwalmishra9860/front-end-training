@@ -70,6 +70,8 @@ h1
     padding: 1rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Right side using nth child */
@@ -77,13 +79,15 @@ h1
 #timeline ul li:nth-child(odd) div
 {
     left: 40px;
+    transform: translate(200px, 0);
 } 
 
 /* left side using nth child */
 
 #timeline ul li:nth-child(even) div
 {
-    left: -434px;    
+    left: -434px;
+    transform: translate(-200px, 0); 
 }
 
 /* Right side using nth child */
@@ -138,6 +142,15 @@ h1
     border-color: transparent transparent transparent var(--secondary-color);
 }
 
+/* Show boxes */
+
+#timeline ul li.show div
+{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Media Queries */
 
 
@@ -152,7 +165,6 @@ h1
     {
         left: -234px;
     }
-
 }
 
 @media(max-width:600px)
@@ -174,6 +186,5 @@ h1
         left: -15px;
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary-color) transparent transparent;
-    }
-
+    }   
 }   
