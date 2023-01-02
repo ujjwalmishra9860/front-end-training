@@ -165,10 +165,15 @@ body
     transform: rotate(135deg);
 }
 
-.menu-wrap .toggler:checked + .hamburgur > div::after,
+.menu-wrap .toggler:checked + .hamburgur > div::after
+{
+    transform: rotate(90deg);
+    top: 2px;
+}
 .menu-wrap .toggler:checked + .hamburgur > div::before
 {
     transform: rotate(90deg);
+    top: -2px;
 }
 
 /* After checked hover styling */
